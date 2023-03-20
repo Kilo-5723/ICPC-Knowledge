@@ -1,4 +1,7 @@
-ICPC Knowledge List:
+ICPC Knowledge List (Translated from Chinese)
+
+Author: Yuhao Du, Mr. Wo
+
 
 | Mark  | Meaning  |
 | :---: | :------: |
@@ -11,9 +14,6 @@ ICPC Knowledge List:
 |   T   | Template |
 |   Y   |  Useful  |
 |   N   | Useless  |
-
-<span style="background-color:green">&nbsp;A&nbsp;</span>
-<span style="background-color:green">&nbsp;A&nbsp;</span>
 
 - Basic
   - Language Basic
@@ -37,10 +37,187 @@ ICPC Knowledge List:
   - Complexity Analysis, D
 
 - Dynamic Programming
+  - Memorization, C
+  - Basic
+    - Optimal Substructure, C
+    - Non-Aftereffect Property, C
+    - State, C
+    - State-Transition Equation, C
+  - Knapsack Problem
+    - 0-1 Knapsack Problem, C
+    - Unbounded Knapsack Problem, C
+    - Multiple Knapsack Problem
+      - $O(nml)$, C
+      - $O(nm\log l)$, C
+      - $O(n^2)$, B
+    - Tree Knapsack Problem
+      - $O(n^3)$, C
+      - $O(n^2)$, B
+    - Group Knapsack Problem, C
+    - Mixed Knapsack Problem, C
+    - Multi-Dimensional Knapsack Problem, C
+  - Range DP
+    - Basic, C
+    - Advanced, B
+  - Digit DP
+    - Basic, C
+    - Advanced, B
+  - DP on Tree (Basic, Re-Rooting)
+    - Basic, C
+    - Advanced, B
+    - Senior, A
+  - Bitmask DP
+    - Basic, C
+    - DP on Broken Profile, B
+    - High Dimentional Prefix Sum, B
+    - Dynamic High Dimentional Prefix Sum, A
+    - Plug DP, S
+  - Probabilistic DP
+    - Basic, C
+    - Advanced, B
+  - Counting by DP
+    - Basic, C
+    - Advanced, B
+    - Senior, A
+  - Others
+    - DP on Graph, B
+    - DP on Cycpe Tree, B
+    - DP on Automaton, A
+    - DP with Divide and Counquer, A
+    - Filling DP, A
+    - Dynamic DP, S
+    - DP on DP, S
+  - Optimization
+    - by Monotonic Stack, B
+    - by Monotonic Queue, B
+    - by Quadrangle Inequality, B
+    - by Slope, B
+    - by Data Structure, A
+    - by Monotone Decision, A
 
 - Data Structure
+  - Queue
+    - Basic, C
+    - Double-Ended Queue, C
+    - Monotonic Queue, C
+  - Stack
+    - Basic, C
+    - Monotonic Stack, C
+  - Linked List
+    - Basic, C
+    - Doubly Linked List, C
+    - Circular Linked List, C
+  - Heap
+    - Basic, C
+    - Two Heaps, C
+    - Fibonacci Heap, N
+    - Leftlist Heap, N
+  - Tree
+    - Basic
+      - Basic Concept, C
+      - Traversal, C
+      - Centroid, C
+      - Diameter, C
+      - Lowest Common Ancestor, C
+      - DFN Order, C
+      - Bracket Order, B
+    - Segment Tree
+      - Basic, B
+      - Lazy Propagation, B
+      - Persistent Segment Tree, A
+      - Li-Chao Segment Tree, S
+      - Merging Segment Tree, S
+      - ZKW Segment Tree, N
+    - Binary Array
+      - Basic, B
+      - K-th Largest Query, B
+      - Multi-Dimensional Binary Array, B
+    - Balanced Binary Search Tree
+      - Splay, A
+      - Treap, A
+      - FHQ Treap, A
+      - Persistent Balanced Binary Search Tree, S
+      - Others
+        - Scapegoat Tree, S
+        - AVL Tree, N
+        - Size Balanced Tree, N
+        - Red-Black Tree, N
+    - Tree of Tree
+      - Segment Tree of Segment Tree, A
+      - Segment Tree of Balanced Binary Search Tree, A
+    - Tree Decomposition
+      - Heavy Path Decomposition, B
+      - Longest Path Decomposition, S
+    - Cartesian Tree, B
+    - DSU on Tree, B
+    - Link-Cut Tree, A
+    - Virtual Tree, A
+    - K-Dimentional Tree, A
+    - Tree Hashing, A
+    - Tree of List, N
+    - Partition Tree, N
+    - And-Or Tree, T
+  - Disjoint Set Union
+    - Basic, C
+    - Weighted Disjoint Set Union, B
+    - Persistent Disjoint Set Union, A
+  - Square Root Decomposition
+    - Mo's algorithm, B
+    - Square Root Decomposition on Chain, B
+    - Square Root Decomposition on Tree, S
+  - Standard Template Library
+    - pair, C
+    - vector, C
+    - priority_queue, C
+    - set, C
+    - map, C
+    - multiset, C
+    - bitset, B
+    - pbds, A
+    - unordered_set, N
+    - unordered_map, N
+  - Sparse Table, C
+  - Dancing Links, N
 
 - Graph
+  - Basic Concept, C
+  - Traversal
+    - Depth First Search, C
+    - Breadth First Search, C
+  - Topological Order, C
+  - Transitive Closure
+    - Floyd–Warshall Algorithm, C
+  - Shortest Path
+    - Bellman–Ford Algorithm, C
+    - Dijkstra's Algorithm, C
+    - Shortest Path Tree, A
+  - Minimum Spanning Tree
+    - Prim's Algorithm, C
+    - Kruskal's Algorithm, C
+    - Borůvka's Algorithm, A
+  - Biconnected Component and 2-Edge-Connected Component
+    - Tarjan's Strongly Connected Components Algorithm, B
+    - Cut Vertex and Bridge, B
+    - Round-Square Tree, A
+    - Kosaraju's Algorithm, T
+  - Bipartite Graph
+    - Bipartite Graph Check, C
+    - Hungarian Algorithm, B
+    - Kuhn-Munkres Algorithm, A
+    - Hopcroft-Karp Algorithm, T
+  - Network Flow
+    - Maximum Flow
+      - Dinic, A
+      - Shortest Augmenting Path Algorithm, A
+    - Minimum-Cost Flow
+      - Minimum Cost Maximum Flow, A
+      - Minimum Cost Feasible Flow, A
+      - ZKW Cost Flow, N
+    - Flow with Lower Bound, S
+  - Euler Tour Technique, C
+  - 2-Satisfiability, B
+  - Tournament Graph, B
+  - 
 
 - Geometry
   - Vector
@@ -55,11 +232,128 @@ ICPC Knowledge List:
     - Polygon Inclusion, A
     - Rotating Calipers, A
     - Half-Plane Intersection, A
-  - 
+  - Circle
+    - Intersection / Tangent, B
+    - Area of Cross / Union, A
+  - Fast Operation on Convex Hull, S
+  - 3-D Geometry, T
+  - Others
+    - Numerical Integration
+      - Simpson's Rule, A
+      - Adaptive Simpson's Rule, A
+    - Percise Point Positioning, A
+    - Minimum Covering Circle, T
+    - Voronoi Diagram, T
+  - Inversion Transformation of Circle, N
+  - Pick's Theorem, N
+  - Difference Constraints, B
+  - Steiner Tree, A
+  - Cactus Graph, A
+  - Directed Minimum Spanning Tree, S
+  - Maximum Cardinality Matching, S
+  - K-th Shortest Path, T
+  - Dominator Tree, T
+  - Global Minimum Cut, T
+  - Chordal Graph, N
 
 - Mathematics
+  - Number Theory
+    - Sieve of Eratosthenes, D
+    - GCD / LCM, D
+    - Exponential by Squaring, C
+    - Modular Multiplicative Inverse, C
+    - Extended Euclidean Algorithm, C
+    - Fermat's Little Theorem / Euler's Theorem, C
+    - Extended Euler's Theorem, B
+    - Primitive Root, A
+    - Floor Sum, A
+    - Linear Congruences
+      - Extended Chinese Remainder Theorem, B
+      - Chinese Remainder Theorem, N
+    - Lucas's Theorem
+      - Basic, B
+      - Extended Lucas's Theorem, A
+    - Discrete Logarithm
+      - Baby-Step Giant-Step, A
+      - Pohlig-Hellman Alogrithm, N
+    - Arithmetic Function
+      - Linear Sieve, C
+      - Fraction Floor Decomposition, C
+      - Dirichlet Product, B
+      - Mobius Inversion Formula, B
+      - Du's Sieve, A
+      - Min25 Sieve, A
+    - Miller Rabin, T
+    - Pollard Rho, T
+    - Pell's Equation, N
+    - Unit Root Inversion, N
+    - Quadratic Residual
+      - Legendre Smbol, N
+      - Cipolla's Algorithm, N
+  - Linear Algebra
+    - Matrix Exponential by Squaring, C
+    - Gaussian Elimination, C
+    - Determinant, B
+    - Hamel Basis, B
+    - Inverse Matrix, A
+    - Linear Recurrence Relations with Constant Coefficients, A
+    - Matrix-Tree Theorem, A
+    - Berlekamp-Massey Algorithm, T
+    - BEST Theorem, N
+    - Eigenvalue and Eigenvector, N
+  - Combinatorics
+    - Binomial Coefficient
+      - Pascal's Triangle, C
+      - Multiset Binomial Coefficient, C
+    - Binomial Theorem, C
+    - Probability Theory
+      - Additive Law of Expectation, C
+      - Conditional Probability, N
+    - Principle of Inclusion and Exclusion
+      - Basic, C
+      - Min-Max Principle of Inclusion and Exclusion, A
+      - Binomial Transform, A
+    - Common Sequence
+      - Fibonacci Sequence, D
+      - Derangement, D
+      - Catalan Number, D
+      - Partition Number, C
+      - Stirling Number, C
+      - Bell Number, N
+      - Bernoulli Number, N
+    - Prufer Sequence, A
+    - Lindström–Gessel–Viennot Lemma, N
+    - Young Tableau, N
+  - Game Theory
+    - Sprague–Grundy Theorem, B
+    - Common Conclusion, B
+    - Partisan Game, N
+  - Polynomial
+    - Fast Fourier Transform / Number Theoretic Transform, B
+    - Lagrange Polynomial, A
+    - Generating Function, A
+    - Polynomial Templates, T
+    - Set Power Series
+      - Fast Walsh–Hadamard Transform, A
+  - Group Theory
+    - Permutation, C
+    - Burnside's Lemma, A
+    - Pólya Enumeration Theorem, A
+  - Linear Programming, T
 
 - String
+  - Knuth–Morris–Pratt Algorithm, C
+  - String Hashing, C
+  - Trie, C
+  - Aho–Corasick Algorithm, B
+  - Suffix Array, A
+  - Suffix Automaton, A
+  - Palindromic Tree, A
+  - Extended KMP Algorithm, T
+  - Manacher's Algorithm, T
+  - Minimum Representation of String, T
+  - Lyndon Decomposition, T
+  - Suffix Tree, N
 
 - Others
   - Discretization, C
@@ -75,12 +369,12 @@ ICPC Knowledge List:
     - Half-Interval Search, B
     - Dancing Links, T
     - A* Search, N
-  - Divide & Counquer
-    - Divide & Conquer on Tree
+  - Divide and Counquer
+    - Divide and Conquer on Tree
       - Centroid Decomposition, A
       - Center Edge Decomposition, A
       - Dynamic Centroid Decomposition, S
-    - CDQ's Divide & Counquer, A
+    - CDQ's Divide and Counquer, A
   - Randomized Algorithm
     - Hill Climbing, Y
     - Simulated Annealing, Y

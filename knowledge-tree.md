@@ -1,4 +1,3 @@
-
 - Basic
   - Language Basic
     - Function, D
@@ -40,26 +39,168 @@
     - Group Knapsack Problem, C
     - Mixed Knapsack Problem, C
     - Multi-Dimensional Knapsack Problem, C
-  - Range Dynamic Programming
+  - Range DP
     - Basic, C
     - Advanced, B
-  - Bitmask Dynamic Programming
+  - Digit DP
     - Basic, C
     - Advanced, B
-  - Dynamic Programming on Tree (Basic, Re-Rooting)
+  - DP on Tree (Basic, Re-Rooting)
     - Basic, C
     - Advanced, B
     - Senior, A
-  - Bitmask Dynamic Programming
+  - Bitmask DP
     - Basic, C
-    - 
+    - DP on Broken Profile, B
     - High Dimentional Prefix Sum, B
     - Dynamic High Dimentional Prefix Sum, A
-    - Dynamic Programming on Broken Profile, S
+    - Plug DP, S
+  - Probabilistic DP
+    - Basic, C
+    - Advanced, B
+  - Counting by DP
+    - Basic, C
+    - Advanced, B
+    - Senior, A
+  - Others
+    - DP on Graph, B
+    - DP on Cycpe Tree, B
+    - DP on Automaton, A
+    - DP with Divide and Counquer, A
+    - Filling DP, A
+    - Dynamic DP, S
+    - DP on DP, S
+  - Optimization
+    - by Monotonic Stack, B
+    - by Monotonic Queue, B
+    - by Quadrangle Inequality, B
+    - by Slope, B
+    - by Data Structure, A
+    - by Monotone Decision, A
 
 - Data Structure
+  - Queue
+    - Basic, C
+    - Double-Ended Queue, C
+    - Monotonic Queue, C
+  - Stack
+    - Basic, C
+    - Monotonic Stack, C
+  - Linked List
+    - Basic, C
+    - Doubly Linked List, C
+    - Circular Linked List, C
+  - Heap
+    - Basic, C
+    - Two Heaps, C
+    - Fibonacci Heap, N
+    - Leftlist Heap, N
+  - Tree
+    - Basic
+      - Basic Concept, C
+      - Traversal, C
+      - Centroid, C
+      - Diameter, C
+      - Lowest Common Ancestor, C
+      - DFN Order, C
+      - Bracket Order, B
+    - Segment Tree
+      - Basic, B
+      - Lazy Propagation, B
+      - Persistent Segment Tree, A
+      - Li-Chao Segment Tree, S
+      - Merging Segment Tree, S
+      - ZKW Segment Tree, N
+    - Binary Array
+      - Basic, B
+      - K-th Largest Query, B
+      - Multi-Dimensional Binary Array, B
+    - Balanced Binary Search Tree
+      - Splay, A
+      - Treap, A
+      - FHQ Treap, A
+      - Persistent Balanced Binary Search Tree, S
+      - Others
+        - Scapegoat Tree, S
+        - AVL Tree, N
+        - Size Balanced Tree, N
+        - Red-Black Tree, N
+    - Tree of Tree
+      - Segment Tree of Segment Tree, A
+      - Segment Tree of Balanced Binary Search Tree, A
+    - Tree Decomposition
+      - Heavy Path Decomposition, B
+      - Longest Path Decomposition, S
+    - Cartesian Tree, B
+    - DSU on Tree, B
+    - Link-Cut Tree, A
+    - Virtual Tree, A
+    - K-Dimentional Tree, A
+    - Tree Hashing, A
+    - Tree of List, N
+    - Partition Tree, N
+    - And-Or Tree, T
+  - Disjoint Set Union
+    - Basic, C
+    - Weighted Disjoint Set Union, B
+    - Persistent Disjoint Set Union, A
+  - Square Root Decomposition
+    - Mo's algorithm, B
+    - Square Root Decomposition on Chain, B
+    - Square Root Decomposition on Tree, S
+  - Standard Template Library
+    - pair, C
+    - vector, C
+    - priority_queue, C
+    - set, C
+    - map, C
+    - multiset, C
+    - bitset, B
+    - pbds, A
+    - unordered_set, N
+    - unordered_map, N
+  - Sparse Table, C
+  - Dancing Links, N
 
 - Graph
+  - Basic Concept, C
+  - Traversal
+    - Depth First Search, C
+    - Breadth First Search, C
+  - Topological Order, C
+  - Transitive Closure
+    - Floyd–Warshall Algorithm, C
+  - Shortest Path
+    - Bellman–Ford Algorithm, C
+    - Dijkstra's Algorithm, C
+    - Shortest Path Tree, A
+  - Minimum Spanning Tree
+    - Prim's Algorithm, C
+    - Kruskal's Algorithm, C
+    - Borůvka's Algorithm, A
+  - Biconnected Component and 2-Edge-Connected Component
+    - Tarjan's Strongly Connected Components Algorithm, B
+    - Cut Vertex and Bridge, B
+    - Round-Square Tree, A
+    - Kosaraju's Algorithm, T
+  - Bipartite Graph
+    - Bipartite Graph Check, C
+    - Hungarian Algorithm, B
+    - Kuhn-Munkres Algorithm, A
+    - Hopcroft-Karp Algorithm, T
+  - Network Flow
+    - Maximum Flow
+      - Dinic, A
+      - Shortest Augmenting Path Algorithm, A
+    - Minimum-Cost Flow
+      - Minimum Cost Maximum Flow, A
+      - Minimum Cost Feasible Flow, A
+      - ZKW Cost Flow, N
+    - Flow with Lower Bound, S
+  - Euler Tour Technique, C
+  - 2-Satisfiability, B
+  - Tournament Graph, B
+  - 
 
 - Geometry
   - Vector
@@ -88,6 +229,15 @@
     - Voronoi Diagram, T
   - Inversion Transformation of Circle, N
   - Pick's Theorem, N
+  - Difference Constraints, B
+  - Steiner Tree, A
+  - Cactus Graph, A
+  - Directed Minimum Spanning Tree, S
+  - Maximum Cardinality Matching, S
+  - K-th Shortest Path, T
+  - Dominator Tree, T
+  - Global Minimum Cut, T
+  - Chordal Graph, N
 
 - Mathematics
   - Number Theory
