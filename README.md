@@ -1,6 +1,10 @@
-ICPC Knowledge List (Translated from Chinese)
+# ICPC Knowledge List (Translated from Chinese)
 
-Author: Yuhao Du, Mr. Wo
+## Original Authors: Yuhao Du, Mr. Wo
+
+[Colored View](https://htmlpreview.github.io/?https://github.com/Kilo-5723/ICPC-Knowledge/blob/main/README.html)
+
+### Colors / Marks
 
 - <span style = "background-color:Aqua;color:black">&nbsp;Basic, D&nbsp;</span> 
 - <span style = "background-color:Lime;color:black">&nbsp;Bronze, C&nbsp;</span> 
@@ -10,6 +14,8 @@ Author: Yuhao Du, Mr. Wo
 - <span style = "background-color:Black;color:white">&nbsp;Template, T&nbsp;</span> 
 - <span style = "background-color:HotPink;color:black">&nbsp;Useful, Y&nbsp;</span> 
 - <span style = "background-color:Silver;color:black">&nbsp;Useless, N&nbsp;</span>
+
+### Main Content
 
 - Basic
   - Language Basic
