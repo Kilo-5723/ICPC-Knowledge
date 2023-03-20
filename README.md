@@ -217,7 +217,15 @@ Author: Yuhao Du, Mr. Wo
   - Euler Tour Technique, C
   - 2-Satisfiability, B
   - Tournament Graph, B
-  - 
+  - Difference Constraints, B
+  - Steiner Tree, A
+  - Cactus Graph, A
+  - Directed Minimum Spanning Tree, S
+  - Maximum Cardinality Matching, S
+  - K-th Shortest Path, T
+  - Dominator Tree, T
+  - Global Minimum Cut, T
+  - Chordal Graph, N
 
 - Geometry
   - Vector
@@ -246,15 +254,6 @@ Author: Yuhao Du, Mr. Wo
     - Voronoi Diagram, T
   - Inversion Transformation of Circle, N
   - Pick's Theorem, N
-  - Difference Constraints, B
-  - Steiner Tree, A
-  - Cactus Graph, A
-  - Directed Minimum Spanning Tree, S
-  - Maximum Cardinality Matching, S
-  - K-th Shortest Path, T
-  - Dominator Tree, T
-  - Global Minimum Cut, T
-  - Chordal Graph, N
 
 - Mathematics
   - Number Theory
