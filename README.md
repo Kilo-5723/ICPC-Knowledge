@@ -1,5 +1,7 @@
 ICPC Knowledge List (Translated from Chinese)
 
+$\LaTeX$
+
 Author: Yuhao Du, Mr. Wo
 
 - <span style = "background-color:Aqua;color:black">&nbsp;Basic, D&nbsp;</span> 
