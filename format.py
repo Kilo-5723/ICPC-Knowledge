@@ -21,7 +21,6 @@ def modify(s):
     s = s[:-1]
     if s[-3] == ',':
         id = s[-1]
-        s, _ = s.split(',')
         l, r = s.split('-', 1)
         r.strip()
         s = l + '- <span style = "background-color:' + background[id] + ';color:' + \
