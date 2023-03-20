@@ -1,0 +1,218 @@
+
+- Basic
+  - Language Basic
+    - Function, D
+    - Pointer, D
+    - Reference, D
+    - Struct / Class, D
+  - Algorithm Basic
+    - Sorting
+      - Selection Sort, D
+      - Bubble Sort, D
+      - Insertion Sort, D
+      - Quick Sort, D
+      - Merge Sort, D
+      - Bucket Sort, D
+      - Radix Sort, D
+      - Heap Sort, N
+      - Shell Sort, N
+  - Big Decimal, D
+  - Bit Operation, D
+  - Complexity Analysis, D
+
+- Dynamic Programming
+  - Memorization, C
+  - Basic
+    - Optimal Substructure, C
+    - Non-Aftereffect Property, C
+    - State, C
+    - State-Transition Equation, C
+  - Knapsack Problem
+    - 0-1 Knapsack Problem, C
+    - Unbounded Knapsack Problem, C
+    - Multiple Knapsack Problem
+      - $O(nml)$, C
+      - $O(nm\log l)$, C
+      - $O(n^2)$, B
+    - Tree Knapsack Problem
+      - $O(n^3)$, C
+      - $O(n^2)$, B
+    - Group Knapsack Problem, C
+    - Mixed Knapsack Problem, C
+    - Multi-Dimensional Knapsack Problem, C
+  - Range Dynamic Programming
+    - Basic, C
+    - Advanced, B
+  - Bitmask Dynamic Programming
+    - Basic, C
+    - Advanced, B
+  - Dynamic Programming on Tree (Basic, Re-Rooting)
+    - Basic, C
+    - Advanced, B
+    - Senior, A
+  - Bitmask Dynamic Programming
+    - Basic, C
+    - 
+    - High Dimentional Prefix Sum, B
+    - Dynamic High Dimentional Prefix Sum, A
+    - Dynamic Programming on Broken Profile, S
+
+- Data Structure
+
+- Graph
+
+- Geometry
+  - Vector
+    - Dot Product, B
+    - Cross Product, B
+    - Angular Coordinate, B
+  - Segment
+    - Intersection Check, B
+    - Intersection, B
+  - Polygon
+    - Convex Hull, B
+    - Polygon Inclusion, A
+    - Rotating Calipers, A
+    - Half-Plane Intersection, A
+  - Circle
+    - Intersection / Tangent, B
+    - Area of Cross / Union, A
+  - Fast Operation on Convex Hull, S
+  - 3-D Geometry, T
+  - Others
+    - Numerical Integration
+      - Simpson's Rule, A
+      - Adaptive Simpson's Rule, A
+    - Percise Point Positioning, A
+    - Minimum Covering Circle, T
+    - Voronoi Diagram, T
+  - Inversion Transformation of Circle, N
+  - Pick's Theorem, N
+
+- Mathematics
+  - Number Theory
+    - Sieve of Eratosthenes, D
+    - GCD / LCM, D
+    - Exponential by Squaring, C
+    - Modular Multiplicative Inverse, C
+    - Extended Euclidean Algorithm, C
+    - Fermat's Little Theorem / Euler's Theorem, C
+    - Extended Euler's Theorem, B
+    - Primitive Root, A
+    - Floor Sum, A
+    - Linear Congruences
+      - Extended Chinese Remainder Theorem, B
+      - Chinese Remainder Theorem, N
+    - Lucas's Theorem
+      - Basic, B
+      - Extended Lucas's Theorem, A
+    - Discrete Logarithm
+      - Baby-Step Giant-Step, A
+      - Pohlig-Hellman Alogrithm, N
+    - Arithmetic Function
+      - Linear Sieve, C
+      - Fraction Floor Decomposition, C
+      - Dirichlet Product, B
+      - Mobius Inversion Formula, B
+      - Du's Sieve, A
+      - Min25 Sieve, A
+    - Miller Rabin, T
+    - Pollard Rho, T
+    - Pell's Equation, N
+    - Unit Root Inversion, N
+    - Quadratic Residual
+      - Legendre Smbol, N
+      - Cipolla's Algorithm, N
+  - Linear Algebra
+    - Matrix Exponential by Squaring, C
+    - Gaussian Elimination, C
+    - Determinant, B
+    - Hamel Basis, B
+    - Inverse Matrix, A
+    - Linear Recurrence Relations with Constant Coefficients, A
+    - Matrix-Tree Theorem, A
+    - Berlekamp-Massey Algorithm, T
+    - BEST Theorem, N
+    - Eigenvalue and Eigenvector, N
+  - Combinatorics
+    - Binomial Coefficient
+      - Pascal's Triangle, C
+      - Multiset Binomial Coefficient, C
+    - Binomial Theorem, C
+    - Probability Theory
+      - Additive Law of Expectation, C
+      - Conditional Probability, N
+    - Principle of Inclusion and Exclusion
+      - Basic, C
+      - Min-Max Principle of Inclusion and Exclusion, A
+      - Binomial Transform, A
+    - Common Sequence
+      - Fibonacci Sequence, D
+      - Derangement, D
+      - Catalan Number, D
+      - Partition Number, C
+      - Stirling Number, C
+      - Bell Number, N
+      - Bernoulli Number, N
+    - Prufer Sequence, A
+    - Lindström–Gessel–Viennot Lemma, N
+    - Young Tableau, N
+  - Game Theory
+    - Sprague–Grundy Theorem, B
+    - Common Conclusion, B
+    - Partisan Game, N
+  - Polynomial
+    - Fast Fourier Transform / Number Theoretic Transform, B
+    - Lagrange Polynomial, A
+    - Generating Function, A
+    - Polynomial Templates, T
+    - Set Power Series
+      - Fast Walsh–Hadamard Transform, A
+  - Group Theory
+    - Permutation, C
+    - Burnside's Lemma, A
+    - Pólya Enumeration Theorem, A
+  - Linear Programming, T
+
+- String
+  - Knuth–Morris–Pratt Algorithm, C
+  - String Hashing, C
+  - Trie, C
+  - Aho–Corasick Algorithm, B
+  - Suffix Array, A
+  - Suffix Automaton, A
+  - Palindromic Tree, A
+  - Extended KMP Algorithm, T
+  - Manacher's Algorithm, T
+  - Minimum Representation of String, T
+  - Lyndon Decomposition, T
+  - Suffix Tree, N
+
+- Others
+  - Discretization, C
+  - Prefix Sum / Difference, C
+  - Reverse Pairs, C
+  - Line Sweep, C
+  - Two Pointers, C
+  - Binary Lifting, B
+  - Ternary Search, B
+  - Subset / Superset Enumeration, B
+  - Search
+    - Pruning, B
+    - Half-Interval Search, B
+    - Dancing Links, T
+    - A* Search, N
+  - Divide and Counquer
+    - Divide and Conquer on Tree
+      - Centroid Decomposition, A
+      - Center Edge Decomposition, A
+      - Dynamic Centroid Decomposition, S
+    - CDQ's Divide and Counquer, A
+  - Randomized Algorithm
+    - Hill Climbing, Y
+    - Simulated Annealing, Y
+    - Genetic Algorithm, N
+  - Bruteforce Verification, Y
+  - Constant-Factor Optimization, Y
+  - I/O Optimization, Y
+  - Matroid, N
