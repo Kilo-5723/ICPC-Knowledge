@@ -30,12 +30,12 @@
     - 0-1 Knapsack Problem, C
     - Unbounded Knapsack Problem, C
     - Multiple Knapsack Problem
-      - $O(nml)$, C
-      - $O(nm\log l)$, C
-      - $O(n^2)$, B
+      - O(nml), C
+      - O(nm*logl), C
+      - O(n^2), B
     - Tree Knapsack Problem
-      - $O(n^3)$, C
-      - $O(n^2)$, B
+      - O(n^3), C
+      - O(n^2), B
     - Group Knapsack Problem, C
     - Mixed Knapsack Problem, C
     - Multi-Dimensional Knapsack Problem, C
