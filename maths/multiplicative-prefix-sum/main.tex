@@ -1,0 +1,56 @@
+\section{Prefix Sum of Multiplicative Functions}
+\label{tag:prefix-sum-of-multiplicative-functions}
+
+\newcommand{\idiv}[2]{{\lfloor{#1}/{#2}\rfloor}}
+\newcommand{\lpf}{\mathop{\rm lpf}}
+\newcommand{\pow}{\mathop{\rm plp}}
+
+Given a {\em multiplicative function} $f(n)$ where:
+\begin{enumerate}
+  \item $f(p)$ is a polynomial of low degree.
+  \item $f(p^k)$ is easy to calculate.
+\end{enumerate}
+
+The problem is to calculate $\sum_{i=1}^N f(n)$ in $o(n)$ time complexity.
+
+\begin{table}[htbp]
+  \caption{Frequently Used Notations in Section~\ref{tag:prefix-sum-of-multiplicative-functions}}
+  \centering
+  \begin{tabular}{rl}
+    \hline
+    {\bf Notation} & {\bf Meaning}                                                                    \\
+    \hline
+    $p$            & Aribtrary prime                                                                  \\
+    $p_k$          & The $k$-th smallest prime, specially $p_0=1$                                     \\
+    $\lpf(n)$      & $\min\{p : p\mid n\}$, least prime factor of $n$, specially $\lpf(1)=1$          \\
+    $\pow(n)$      & $\max\{c : \lpf(n)^c\mid n\}$, power of $\lpf(n)$ for $n$                        \\
+    $[P]$          & Iverson bracket, $1$ if statement $P$ is true and $0$ otherwise                  \\
+    \hline
+    $f(n)$         & Function given in problem definition                                             \\
+    $F_k(n)$       & $\sum_{i=2}^n[p_k\le \lpf(i)] f(i)$,  prefix sum of $f(i)$ that $\lpf(i)\ge p_k$ \\
+    $F_P(n)$       & $\sum_{2\le p\le n} f(p)$,  prefix sum of $f(p)$ that $p\le n$                   \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Min25 Sieve}
+\allowdisplaybreaks
+Min25 Sieve solves this problem in $O(n^{3/4}/\log(n))$ time complexity and $O(\sqrt{n})$ space complexity. Here we define:
+\begin{itemize}
+  \item $F_k(n)=\sum_{i=2}^n[p_k\le\lpf(i)] f(i)$, the prefix sum of $f(i)$ that $\lpf(i)\ge p_k$.
+  \item $F_P(n)=\sum_{2\le p\le n} f(p)$, the prefix sum of $f(p)$ that $p\le n$.
+\end{itemize}
+It's straightforward that $\sum_{i=1}^N f(n)=F_1(n)+f(1)$ because $\lpf(i)\ge 2$ for all $2\le i\le n$. The next step is to calculate $F_k(n)$. Denote $\lpf(i)$ and $\pow(i)$ by $p_j$ and $c$, we need to transform $F_k(n)$ to a form that is easy to calculate:
+\begin{align*}
+  F_k(n) & = \sum_{i=2}^n[p_k\le\lpf(i)]f(i)                                                                &  & \text{Definition of }F_k(n)                            \\
+         & = \sum_{i=2}^n[p_k\le p_j]f(i/p_j^c)\cdot f(p_j^c)                                               &  & \text{Multiplicative function}                         \\
+         & = \sum_{j\ge k}\sum_{c\ge 1} f(p_j^c) \cdot \sum_{i=2}^n [\lpf(i)=p_j\wedge\pow(i)=c] f(i/p_j^c) &  & \text{Group by }p_j\text{ and }c                       \\
+         & = \sum_{j\ge k}\sum_{c\ge 1} f(p_j^c) \cdot \sum_{i=1}^\idiv{n}{p^c} [i=1\vee \lpf(i)>p_j] f(i)  &  & \text{Exclude }p_j^{c+1}\mid i\text{ by }\lpf(i/p_j^c) \\
+         & = \sum_{j\ge k}\sum_{c\ge 1} f(p_j^c) \cdot \left(1+F_{j+1}\left(\idiv{n}{p_j^c}\right)\right)   &  & \text{Definition of }F_k(n)                            \\
+         & = \sum_{\substack{j\ge k                                                                                                                                     \\p_j^2\le n}}\sum_{c\ge 1} f(p_j^c) \cdot \left([c>1]+F_{j+1}(\idiv{n}{p_j^c})\right) + F_P(n)-F_P(p_{k-1})                        &  & \text{Take out }f(p)                                \\
+         & = \sum_{\substack{j\ge k                                                                                                                                     \\p_j^2\le n}}\sum_{c\ge 1} f(p_j^c) \cdot F_{j+1}(\idiv{n}{p_j^c})+\sum_{\substack{j\ge k                                                                                                                                     \\p_j^2\le n}}\sum_{c\ge 2}f(p_j^c)   +  F_P(n)-F_P(p_{k-1})                     &  & \text{Take out }[c>1]  \\
+  %  & = \sum_{\substack{j\ge k                                                                                                                                     \\p_j^2\le n}}\sum_{\substack{c\ge 1\\p_j^{c+1}\le n}} \left(f(p_j^c) \cdot F_{j+1}(\idiv{n}{p_j^c})+f(p_j^{c+1})\right)   +  F_P(n)-F_P(p_{k-1})                     &  & \text{Merge }[c>1]\text{ to c-1 in }\sum   \\
+         & = \sum_{\substack{j\ge k                                                                                                                                     \\p_j^2\le n}}\sum_{\substack{c\ge 1\\p_j^{c+1}\le n}} \left(f(p_j^c) \cdot F_{j+1}(\idiv{n}{p_j^c})+f(p_j^{c+1})\right)   +  F_P(n)-F_P(p_{k-1})                     &  & F_{j+1}(\idiv{n}{p_j^c})=0\text{ for max } c  \\
+\end{align*}
+
+By this formula,
